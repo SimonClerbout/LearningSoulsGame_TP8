@@ -631,4 +631,35 @@ public class CharacterTest {
             Assert.assertTrue(false);
         }
     }
+
+    @Test
+    public void testBagAttributeInCharacterClass() {
+        try {
+            Class<?> c1 = Class.forName("lsg.bags.Bag");
+            Class<?> c2 = Class.forName("lsg.characters.Character");
+            Class<?> c3 = Class.forName("lsg.bags.SmallBag");
+            Class<?> c4 = Class.forName("lsg.characters.Hero");
+            Field f = c2.getDeclaredField("bag");
+            Constructor<?> constructor = c4.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Assert.assertEquals(f.getModifiers(), Modifier.PRIVATE);
+            Assert.assertEquals(f.getType(), c1);
+
+            f.setAccessible(true);
+            Assert.assertEquals(f.get(o).getClass(), c3);
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called Bag ou SmallBag in lsg.bags package");
+        } catch (NoSuchFieldException e) {
+            Assert.fail("should have an attribute named bag in Character class");
+        } catch (NoSuchMethodException e) {
+            Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
 }
