@@ -419,10 +419,13 @@ public class CharacterTest {
 
             m.invoke(o, o4);
 
-            Assert.assertEquals((String)(m1.invoke(o)), "Bag [ 3 items | 9/10 kg ]\n" +
-                    "∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]\n" +
-                    "∙ Dragon Slayer Leggings(10.2)[3 kg]\n" +
-                    "∙ Ringed Knight Armor(14.99)[4 kg]\n");
+            String[] list = ((String)(m1.invoke(o))).split("\n");
+            String[] list2 = Arrays.copyOfRange(list, 1, 5);
+
+            Assert.assertEquals(list[0], "Bag [ 3 items | 9/10 kg ]");
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Dragon Slayer Leggings(10.2)[3 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Ringed Knight Armor(14.99)[4 kg]"));
         } catch (ClassNotFoundException e) {
             Assert.fail("should have a class called Bag in lsg.bags package");
         } catch (NoSuchMethodException e) {
@@ -654,6 +657,39 @@ public class CharacterTest {
             Assert.fail("should have an attribute named bag in Character class");
         } catch (NoSuchMethodException e) {
             Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void testPickUp() {
+        try {
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c = Class.forName("lsg.characters.Hero");
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Method m = c1.getDeclaredMethod("pickUp", i);
+
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m.getReturnType(), void.class);
+
+            Class<?> c2 = Class.forName("lsg.weapons.ShotGun");
+            Constructor<?> constructor2 = c2.getDeclaredConstructor();
+            Object o2 = constructor2.newInstance();
+
+            m.invoke(o, o2);
+            Assert.assertEquals(outContent.toString(), "Gregooninator picks up ShotGun (min:6 max:20 stam:5 dur:100)");
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Collectible");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named pickUp in Character class");
         } catch (InstantiationException e) {
             Assert.assertTrue(false);
         } catch (IllegalAccessException e) {
