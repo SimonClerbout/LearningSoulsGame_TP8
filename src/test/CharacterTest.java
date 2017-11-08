@@ -1119,5 +1119,64 @@ public class CharacterTest {
         }
     }
 
+    @Test
+    public void existFastMethods() {
+        try {
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Class<?> c2 = Class.forName("lsg.consumables.drinks.Drink");
+            Class<?> c3 = Class.forName("lsg.consumables.food.Food");
+            Class<?> c4 = Class.forName("lsg.consumables.repair.RepairKit");
+            Method m1 = c1.getDeclaredMethod("fastDrink");
+            Method m2 = c1.getDeclaredMethod("fastEat");
+            Method m3 = c1.getDeclaredMethod("fastRepair");
+
+            Assert.assertEquals(m1.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m2.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m3.getModifiers(), Modifier.PUBLIC);
+            Assert.assertTrue("wrong return type (Drink) of fastDrink", m1.getReturnType() == c2);
+            Assert.assertTrue("wrong return type (Food) of fastEat", m2.getReturnType() == c3);
+            Assert.assertTrue("wrong return type (RepairKit) of fastRepair", m3.getReturnType() == c4);
+
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c5 = Class.forName("lsg.characters.Hero");
+            Method m4 = c1.getDeclaredMethod("pickUp", i);
+            Constructor<?> constructor = c5.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Class<?> c6 = Class.forName("lsg.consumables.food.Hamburger");
+            Constructor<?> constructor6 = c6.getDeclaredConstructor();
+            Object o4 = constructor6.newInstance();
+
+            m4.invoke(o, o4);
+
+            System.out.println("");
+
+            Object o5 = m2.invoke(o);
+
+            Assert.assertTrue(o5 == o4);
+
+            String[] list = outContent.toString().split("\n");
+
+            Assert.assertEquals(list[0], "Gregooninator picks up Uncle Greg's spicy Maroilles burger [40 life point(s)]");
+            Assert.assertEquals(list[1], "Gregooninator eats FAST :");
+            Assert.assertEquals(list[2], "Gregooninator eats Uncle Greg's spicy Maroilles burger [40 life point(s)]");
+            Assert.assertEquals(list[3], "Gregooninator pulls out Uncle Greg's spicy Maroilles burger [0 life point(s)]");
+
+            Object o6 = m1.invoke(o);
+
+            Assert.assertEquals(o6, null);
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called Character");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named fastDrink ou fastEat or fastRepair in Character class");
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
 
 }
