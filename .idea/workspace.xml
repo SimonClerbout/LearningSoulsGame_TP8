@@ -21,8 +21,8 @@
       <file leaf-file-name="CharacterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/CharacterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="552" column="78" lean-forward="false" selection-start-line="552" selection-start-column="78" selection-end-line="552" selection-end-column="78" />
+            <state relative-caret-position="588">
+              <caret line="561" column="76" lean-forward="true" selection-start-line="561" selection-start-column="76" selection-end-line="561" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -901,26 +901,11 @@
       <workItem from="1508395813665" duration="6379000" />
       <workItem from="1510043717768" duration="5661000" />
       <workItem from="1510067612717" duration="599000" />
-      <workItem from="1510125247588" duration="5225000" />
+      <workItem from="1510125247588" duration="5939000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests - 2017.11.08 at 09h 41m 51s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.11.08 at 09h 42m 03s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.11.08 at 09h 42m 39s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.11.08 at 09h 42m 50s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.11.08 at 09h 43m 01s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="tests - 2017.11.08 at 09h 43m 11s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
@@ -936,9 +921,24 @@
     <history-entry file="tests - 2017.11.08 at 09h 44m 57s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="tests - 2017.11.08 at 09h 53m 16s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.11.08 at 09h 53m 41s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.11.08 at 09h 53m 54s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.11.08 at 09h 56m 26s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.11.08 at 09h 56m 44s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94440000" />
+    <option name="totallyTimeSpent" value="95154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1922" height="1057" extended-state="7" />
@@ -1416,8 +1416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/CharacterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="552" column="78" lean-forward="false" selection-start-line="552" selection-start-column="78" selection-end-line="552" selection-end-column="78" />
+        <state relative-caret-position="588">
+          <caret line="561" column="76" lean-forward="true" selection-start-line="561" selection-start-column="76" selection-end-line="561" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

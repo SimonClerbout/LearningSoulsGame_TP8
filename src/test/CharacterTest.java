@@ -520,6 +520,65 @@ public class CharacterTest {
     public void testTransfer() {
         try {
             Class<?> c = Class.forName("lsg.bags.Bag");
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Constructor<?> constructor = c.getDeclaredConstructor(int.class);
+            Object b1 = constructor.newInstance(10);
+            Object b2 = constructor.newInstance(5);
+            Method m1 = c.getDeclaredMethod("push", i);
+            Method m = c.getDeclaredMethod("transfer", c, c);
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC | Modifier.STATIC);
+            Assert.assertTrue("wrong return type (void) of transfer", m.getReturnType() == void.class);
+
+            Class<?> c2 = Class.forName("lsg.weapons.ShotGun");
+            Constructor<?> constructor2 = c2.getDeclaredConstructor();
+            Object o2 = constructor2.newInstance();
+
+            m1.invoke(b1, o2);
+
+            Class<?> c3 = Class.forName("lsg.armor.DragonSlayerLeggings");
+            Constructor<?> constructor3 = c3.getDeclaredConstructor();
+            Object o3 = constructor3.newInstance();
+
+            m1.invoke(b1, o3);
+
+            Class<?> c4 = Class.forName("lsg.armor.RingedKnightArmor");
+            Constructor<?> constructor4 = c4.getDeclaredConstructor();
+            Object o4 = constructor4.newInstance();
+
+            m1.invoke(b1, o4);
+
+            m.invoke(null, b1, b2);
+
+            Method m2 = c.getDeclaredMethod("getItems");
+
+            Object o5 = m2.invoke(b1);
+            Object o6 = m2.invoke(b2);
+            Assert.assertEquals(Array.getLength(o5) + Array.getLength(o6), 3);
+
+            Method m3 = c.getDeclaredMethod("getCapacity");
+            Method m4 = c.getDeclaredMethod("getWeight");
+
+            Assert.assertTrue((int)(m3.invoke(b1)) >= (int)(m4.invoke(b1)));
+            Assert.assertTrue((int)(m3.invoke(b2)) >= (int)(m4.invoke(b2)));
+
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called lsg.bags.Bag");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have a method called transfer in Bag class");
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void testTransferWithMain() {
+        try {
+            Class<?> c = Class.forName("lsg.bags.Bag");
             Method m = c.getDeclaredMethod("transfer", c, c);
 
             Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC | Modifier.STATIC);
