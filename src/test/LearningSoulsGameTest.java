@@ -104,31 +104,33 @@ public class LearningSoulsGameTest {
 
             Assert.assertEquals("", list[45]);
             Assert.assertEquals("--- ACTIONS ---", list[46]);
-            Assert.assertEquals("Gregooninator drinks FAST :", list[47]);
-            Assert.assertEquals("Gregooninator drinks Hot Grandmother Coffee [10 stamina point(s)]", list[48]);
-            Assert.assertEquals("Gregooninator pulls out Hot Grandmother Coffee [0 stamina point(s)]", list[49]);
+            Assert.assertEquals("Gregooninator pulls out Hot Grandmother Coffee [10 stamina point(s)]", list[47]);
+            Assert.assertEquals("", list[48]);
+            Assert.assertEquals("Gregooninator drinks Hot Grandmother Coffee [10 stamina point(s)]", list[49]);
             Assert.assertEquals("", list[50]);
-            Assert.assertEquals("Gregooninator eats FAST :", list[51]);
-            Assert.assertEquals("Gregooninator eats Uncle Greg's spicy Maroilles burger [40 life point(s)]", list[52]);
-            Assert.assertEquals("Gregooninator pulls out Uncle Greg's spicy Maroilles burger [0 life point(s)]", list[53]);
+            Assert.assertEquals("Gregooninator pulls out Uncle Greg's spicy Maroilles burger [40 life point(s)]", list[51]);
+            Assert.assertEquals("", list[52]);
+            Assert.assertEquals("Gregooninator eats Uncle Greg's spicy Maroilles burger [40 life point(s)]", list[53]);
             Assert.assertEquals("", list[54]);
             Assert.assertEquals("Gregooninator pulls out ShotGun (min:6 max:20 stam:5 dur:100) and equips it !", list[55]);
             Assert.assertEquals("", list[56]);
             Assert.assertEquals("Gregooninator pulls out Dragon Slayer Leggings(10.2) and equips it !", list[57]);
             Assert.assertEquals("", list[58]);
-            Assert.assertEquals("Gregooninator repairs FAST :", list[59]);
-            Assert.assertEquals("Gregooninator repairs ShotGun (min:6 max:20 stam:5 dur:100) with Repair Kit [10 durability point(s)]", list[60]);
-            Assert.assertEquals("", list[61]);
-            Assert.assertEquals("--- APRES ---", list[62]);
-            Assert.assertEquals("[ Hero ]             Gregooninator        LIFE:  100      STAMINA:   50      PROTECTION: 10.20     BUFF:  0.00    (ALIVE)", list[63]);
-            Assert.assertEquals("ARMOR   1:Dragon Slayer Leggings(10.2)    2:empty                           3:empty                         TOTAL:10.2", list[64]);
-            Assert.assertEquals("WEAPON : ShotGun (min:6 max:20 stam:5 dur:101)", list[65]);
-            Assert.assertEquals("BAG : MediumBag [ 4 items | 7/40 kg ]", list[66]);
-            Assert.assertEquals("∙ Dragon Slayer Leggings(10.2)[3 kg]", list[25]);
-            Assert.assertEquals("∙ Repair Kit [9 durability point(s)][1 kg]", list[67]);
-            Assert.assertEquals("∙ Ringed Knight Armor(14.99)[4 kg]", list[68]);
-            Assert.assertEquals("∙ Repair Kit [10 durability point(s)][1 kg]", list[69]);
-            Assert.assertEquals("∙ 12 years old Oban [150 stamina point(s)][1 kg]", list[70]);
+            Assert.assertEquals("Gregooninator pulls out Repair Kit [10 durability point(s)]", list[59]);
+            Assert.assertEquals("", list[60]);
+            Assert.assertEquals("Gregooninator repairs ShotGun (min:6 max:20 stam:5 dur:100) with Repair Kit [10 durability point(s)]", list[61]);
+            Assert.assertEquals("", list[62]);
+            Assert.assertEquals("--- APRES ---", list[63]);
+            Assert.assertEquals("[ Hero ]             Gregooninator        LIFE:  100      STAMINA:   50      PROTECTION: 10.20     BUFF:  0.00    (ALIVE)", list[64]);
+            Assert.assertEquals("ARMOR   1:Dragon Slayer Leggings(10.2)    2:empty                           3:empty                         TOTAL:10.2", list[65]);
+            Assert.assertEquals("WEAPON : ShotGun (min:6 max:20 stam:5 dur:101)", list[66]);
+            Assert.assertEquals("BAG : MediumBag [ 3 items | 6/40 kg ]", list[67]);
+
+            String[] list6 = Arrays.copyOfRange(list, 68, 72);
+
+            Assert.assertTrue(Arrays.asList(list6).contains("∙ Ringed Knight Armor(14.99)[4 kg]"));
+            Assert.assertTrue(Arrays.asList(list6).contains("∙ Repair Kit [10 durability point(s)][1 kg]"));
+            Assert.assertTrue(Arrays.asList(list6).contains("∙ 12 years old Oban [150 stamina point(s)][1 kg]"));
         } catch (ClassNotFoundException e) {
             Assert.fail("should have a class called LearningSoulsGame");
         } catch (NoSuchMethodException e) {
