@@ -482,7 +482,7 @@ public class CharacterTest {
     }
 
     @Test
-    public void existBagMain() {
+    public void testBagMain() {
         try {
             Class<?> c = Class.forName("lsg.bags.SmallBag");
             Method m = c.getMethod("main", String[].class);
@@ -509,6 +509,53 @@ public class CharacterTest {
             Assert.fail("should have a class called MediumBag in lsg.bags package");
         } catch (NoSuchMethodException e) {
             Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void testTransfer() {
+        try {
+            Class<?> c = Class.forName("lsg.bags.Bag");
+            Method m = c.getDeclaredMethod("transfer", c, c);
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC | Modifier.STATIC);
+            Assert.assertTrue("wrong return type (void) of transfer", m.getReturnType() == void.class);
+
+            Method m2 = c.getMethod("main", String[].class);
+            Object[] args = new Object[1];
+
+            args[0] = new String[]{};
+            m2.invoke(null, args);
+
+            String[] list = outContent.toString().split("\n");
+
+            Assert.assertEquals("Sac 1 :", list[0]);
+            Assert.assertEquals("Bag [ 3 items | 9/10 kg ]", list[1]);
+            Assert.assertEquals("∙ Ringed Knight Armor(14.99)[4 kg]", list[2]);
+            Assert.assertEquals("∙ Dragon Slayer Leggings(10.2)[3 kg]", list[3]);
+            Assert.assertEquals("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]", list[4]);
+            Assert.assertEquals("", list[5]);
+            Assert.assertEquals("Sac 2 :", list[6]);
+            Assert.assertEquals("Bag [ 0 items | 0/5 kg ]", list[7]);
+            Assert.assertEquals("∙ (empty)", list[8]);
+            Assert.assertEquals("", list[9]);
+            Assert.assertEquals("Sac 2 après transfert :", list[10]);
+            Assert.assertEquals("Bag [ 1 items | 4/5 kg ]", list[11]);
+            Assert.assertEquals("∙ Ringed Knight Armor(14.99)[4 kg]", list[12]);
+            Assert.assertEquals("", list[13]);
+            Assert.assertEquals("Sac 1 après transfert :", list[14]);
+            Assert.assertEquals("Bag [ 2 items | 5/10 kg ]", list[15]);
+            Assert.assertEquals("∙ Dragon Slayer Leggings(10.2)[3 kg]", list[16]);
+            Assert.assertEquals("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]", list[17]);
+
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called lsg.bags.Bag");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have a method called transfer in Bag class");
         } catch (IllegalAccessException e) {
             Assert.assertTrue(false);
         } catch (InvocationTargetException e) {
