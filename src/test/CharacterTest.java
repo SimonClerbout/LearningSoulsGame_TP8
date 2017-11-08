@@ -733,4 +733,62 @@ public class CharacterTest {
             Assert.assertTrue(false);
         }
     }
+
+    @Test
+    public void testPrintBag() {
+        try {
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c = Class.forName("lsg.characters.Hero");
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Method m = c1.getDeclaredMethod("pickUp", i);
+            Method m1 = c1.getDeclaredMethod("printBag");
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Assert.assertEquals(m1.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m1.getReturnType(), void.class);
+
+            Class<?> c2 = Class.forName("lsg.armor.DragonSlayerLeggings");
+            Constructor<?> constructor2 = c2.getDeclaredConstructor();
+            Object o2 = constructor2.newInstance();
+
+            m.invoke(o, o2);
+
+            Class<?> c3 = Class.forName("lsg.weapons.ShotGun");
+            Constructor<?> constructor3 = c3.getDeclaredConstructor();
+            Object o3 = constructor3.newInstance();
+
+            m.invoke(o, o3);
+
+            Class<?> c4 = Class.forName("lsg.armor.RingedKnightArmor");
+            Constructor<?> constructor4 = c4.getDeclaredConstructor();
+            Object o4 = constructor4.newInstance();
+
+            m.invoke(o, o4);
+
+            System.out.println();
+
+            m1.invoke(o);
+
+            String[] list = outContent.toString().split("\n");
+
+            Assert.assertEquals("BAG : SmallBag [ 3 items | 9/10 kg ]", list[1]);
+
+            String[] list2 = Arrays.copyOfRange(list, 2, 5);
+
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Ringed Knight Armor(14.99)[4 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Dragon Slayer Leggings(10.2)[3 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]"));
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Collectible");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named pickUp in Character class");
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
 }
