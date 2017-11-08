@@ -434,4 +434,85 @@ public class CharacterTest {
             Assert.assertTrue(false);
         }
     }
+
+    @Test
+    public void existSmallBagClass() {
+        try {
+            Class<?> c = Class.forName("lsg.bags.SmallBag");
+
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+            Method m = c.getMethod("getCapacity");
+
+            Assert.assertEquals((int) (m.invoke(o)), 10);
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called SmallBag in lsg.bags package");
+        } catch (NoSuchMethodException e) {
+            Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void existMediumBagClass() {
+        try {
+            Class<?> c = Class.forName("lsg.bags.MediumBag");
+
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+            Method m = c.getMethod("getCapacity");
+
+            Assert.assertEquals((int) (m.invoke(o)), 40);
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called MediumBag in lsg.bags package");
+        } catch (NoSuchMethodException e) {
+            Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void existBagMain() {
+        try {
+            Class<?> c = Class.forName("lsg.bags.SmallBag");
+            Method m = c.getMethod("main", String[].class);
+            Object[] args = new Object[1];
+
+            args[0] = new String[]{};
+            m.invoke(null, args);
+
+            String[] list = outContent.toString().split("\n");
+
+            Assert.assertEquals("SmallBag [ 4 items | 10/10 kg ]", list[0]);
+            Assert.assertEquals("∙ Black Witch Veil(4.6)[4 kg]", list[1]);
+            Assert.assertEquals("∙ Dragon Slayer Leggings(10.2)[3 kg]", list[2]);
+            Assert.assertEquals("∙ Basic Sword (min:5 max:10 stam:20 dur:100)[2 kg]", list[3]);
+            Assert.assertEquals("∙ Uncle Greg's spicy Maroilles burger [40 life point(s)][1 kg]", list[4]);
+            Assert.assertEquals("", list[5]);
+            Assert.assertEquals("Pop sur Dragon Slayer Leggings(10.2)", list[6]);
+            Assert.assertEquals("", list[7]);
+            Assert.assertEquals("SmallBag [ 3 items | 7/10 kg ]", list[8]);
+            Assert.assertEquals("∙ Black Witch Veil(4.6)[4 kg]", list[9]);
+            Assert.assertEquals("∙ Basic Sword (min:5 max:10 stam:20 dur:100)[2 kg]", list[10]);
+            Assert.assertEquals("∙ Uncle Greg's spicy Maroilles burger [40 life point(s)][1 kg]", list[11]);
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called MediumBag in lsg.bags package");
+        } catch (NoSuchMethodException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
 }
