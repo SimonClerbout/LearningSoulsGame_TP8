@@ -839,4 +839,78 @@ public class CharacterTest {
             Assert.fail("should have an method named getBagWeight in Character class");
         }
     }
+
+    @Test
+    public void testSetBag() {
+        try {
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c = Class.forName("lsg.characters.Hero");
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Class<?> cb = Class.forName("lsg.bags.Bag");
+            Method m = c1.getDeclaredMethod("setBag", cb);
+            Method m2 = c1.getDeclaredMethod("pickUp", i);
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m.getReturnType(), cb);
+
+            Class<?> c2 = Class.forName("lsg.armor.DragonSlayerLeggings");
+            Constructor<?> constructor2 = c2.getDeclaredConstructor();
+            Object o2 = constructor2.newInstance();
+
+            m2.invoke(o, o2);
+
+            Class<?> c3 = Class.forName("lsg.weapons.ShotGun");
+            Constructor<?> constructor3 = c3.getDeclaredConstructor();
+            Object o3 = constructor3.newInstance();
+
+            m2.invoke(o, o3);
+
+            Class<?> c4 = Class.forName("lsg.armor.RingedKnightArmor");
+            Constructor<?> constructor4 = c4.getDeclaredConstructor();
+            Object o4 = constructor4.newInstance();
+
+            m2.invoke(o, o4);
+
+            Class<?> c5 = Class.forName("lsg.bags.MediumBag");
+            Constructor<?> constructor5 = c5.getDeclaredConstructor();
+            Object o5 = constructor5.newInstance();
+
+            System.out.println();
+
+            Object o6 = m.invoke(o, o5);
+
+            Class<?> c6 = Class.forName("lsg.bags.SmallBag");
+            Method m4 = c6.getMethod("getWeight");
+
+            Assert.assertEquals(o6.getClass(), c6);
+            Assert.assertEquals((int)(m4.invoke(o6)), 0);
+
+            Method m3 = c1.getDeclaredMethod("printBag");
+
+            m3.invoke(o);
+
+            String[] list = outContent.toString().split("\n");
+
+            Assert.assertEquals(list[1], "Gregooninator changes SmallBag for MediumBag");
+            Assert.assertEquals(list[2], "BAG : MediumBag [ 3 items | 9/40 kg ]");
+
+            String[] list2 = Arrays.copyOfRange(list, 3, 6);
+
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Ringed Knight Armor(14.99)[4 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Dragon Slayer Leggings(10.2)[3 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]"));
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Collectible");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named SetBag in Character class");
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
 }
