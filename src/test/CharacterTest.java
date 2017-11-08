@@ -2,6 +2,7 @@ package test;
 
 import com.sun.istack.internal.Nullable;
 import lsg.armor.ArmorItem;
+import lsg.consumables.Consumable;
 import lsg.weapons.Weapon;
 import org.junit.After;
 import org.junit.Assert;
@@ -1051,4 +1052,72 @@ public class CharacterTest {
             Assert.assertTrue(false);
         }
     }
+
+    @Test
+    public void existFastUseFirst() {
+        try {
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Class<?> c2 = Class.forName("lsg.consumables.Consumable");
+            Method m1 = c1.getDeclaredMethod("fastUseFirst", Class.class);
+
+            Assert.assertEquals(m1.getModifiers(), Modifier.PRIVATE);
+            Assert.assertTrue("wrong return type (Consumable) of fastUseFirst", m1.getReturnType() == c2);
+            Assert.assertEquals(m1.getGenericParameterTypes()[0].getTypeName(), "java.lang.Class<? extends lsg.consumables.Consumable>");
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called Character");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named fastUseFirst in Character class");
+        }
+    }
+
+    @Test
+    public void testFastUseFirst() {
+        try {
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Class<?> cc = Class.forName("lsg.consumables.Consumable");
+            Method m1 = c1.getDeclaredMethod("fastUseFirst", Class.class);
+
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c3 = Class.forName("lsg.characters.Hero");
+            Method m2 = c1.getDeclaredMethod("pickUp", i);
+            Constructor<?> constructor = c3.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+            Method m3 = c1.getDeclaredMethod("getBagItems");
+
+            Class<?> c4 = Class.forName("lsg.consumables.food.Hamburger");
+            Constructor<?> constructor4 = c4.getDeclaredConstructor();
+            Object o4 = constructor4.newInstance();
+
+            m1.setAccessible(true);
+            m2.invoke(o, o4);
+
+            Object o5 = m3.invoke(o);
+
+            Assert.assertEquals(Array.getLength(o5), 1);
+
+            Class<?> c5 = Class.forName("lsg.consumables.food.Food");
+
+            Assert.assertEquals(m1.invoke(o, c5), o4);
+
+            Class<?> c6 = Class.forName("lsg.consumables.drinks.Drink");
+
+            Assert.assertEquals(m1.invoke(o, c6), null);
+
+            Object o6 = m3.invoke(o);
+
+            Assert.assertEquals(Array.getLength(o6), 0);
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have a class called Character");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named fastUseFirst in Character class");
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+
 }
