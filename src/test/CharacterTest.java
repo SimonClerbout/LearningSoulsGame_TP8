@@ -11,6 +11,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.*;
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class CharacterTest {
@@ -494,17 +495,23 @@ public class CharacterTest {
             String[] list = outContent.toString().split("\n");
 
             Assert.assertEquals("SmallBag [ 4 items | 10/10 kg ]", list[0]);
-            Assert.assertEquals("∙ Black Witch Veil(4.6)[4 kg]", list[1]);
-            Assert.assertEquals("∙ Dragon Slayer Leggings(10.2)[3 kg]", list[2]);
-            Assert.assertEquals("∙ Basic Sword (min:5 max:10 stam:20 dur:100)[2 kg]", list[3]);
-            Assert.assertEquals("∙ Uncle Greg's spicy Maroilles burger [40 life point(s)][1 kg]", list[4]);
-            Assert.assertEquals("", list[5]);
+
+            String[] list2 = Arrays.copyOfRange(list, 1, 5);
+
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Black Witch Veil(4.6)[4 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Dragon Slayer Leggings(10.2)[3 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Basic Sword (min:5 max:10 stam:20 dur:100)[2 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Uncle Greg's spicy Maroilles burger [40 life point(s)][1 kg]"));
+
             Assert.assertEquals("Pop sur Dragon Slayer Leggings(10.2)", list[6]);
             Assert.assertEquals("", list[7]);
             Assert.assertEquals("SmallBag [ 3 items | 7/10 kg ]", list[8]);
-            Assert.assertEquals("∙ Black Witch Veil(4.6)[4 kg]", list[9]);
-            Assert.assertEquals("∙ Basic Sword (min:5 max:10 stam:20 dur:100)[2 kg]", list[10]);
-            Assert.assertEquals("∙ Uncle Greg's spicy Maroilles burger [40 life point(s)][1 kg]", list[11]);
+
+            String[] list3 = Arrays.copyOfRange(list, 9, 12);
+
+            Assert.assertTrue(Arrays.asList(list3).contains("∙ Black Witch Veil(4.6)[4 kg]"));
+            Assert.assertTrue(Arrays.asList(list3).contains("∙ Basic Sword (min:5 max:10 stam:20 dur:100)[2 kg]"));
+            Assert.assertTrue(Arrays.asList(list3).contains("∙ Uncle Greg's spicy Maroilles burger [40 life point(s)][1 kg]"));
         } catch (ClassNotFoundException e) {
             Assert.fail("should have a class called MediumBag in lsg.bags package");
         } catch (NoSuchMethodException e) {
@@ -594,16 +601,19 @@ public class CharacterTest {
 
             Assert.assertEquals("Sac 1 :", list[0]);
             Assert.assertEquals("Bag [ 3 items | 9/10 kg ]", list[1]);
-            Assert.assertEquals("∙ Ringed Knight Armor(14.99)[4 kg]", list[2]);
-            Assert.assertEquals("∙ Dragon Slayer Leggings(10.2)[3 kg]", list[3]);
-            Assert.assertEquals("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]", list[4]);
-            Assert.assertEquals("", list[5]);
+
+            String[] list2 = Arrays.copyOfRange(list, 2, 5);
+
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Ringed Knight Armor(14.99)[4 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ Dragon Slayer Leggings(10.2)[3 kg]"));
+            Assert.assertTrue(Arrays.asList(list2).contains("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]"));
+
             Assert.assertEquals("Sac 2 :", list[6]);
             Assert.assertEquals("Bag [ 0 items | 0/5 kg ]", list[7]);
             Assert.assertEquals("∙ (empty)", list[8]);
             Assert.assertEquals("", list[9]);
             Assert.assertEquals("Sac 2 après transfert :", list[10]);
-            Assert.assertEquals("Bag [ 1 items | 4/5 kg ]", list[11]);
+            Assert.assertTrue(list[11].contentEquals("Bag [ 1 items | 4/5 kg ]") || list[11].contentEquals("Bag [ 2 items | 5/5 kg ]"));
             Assert.assertEquals("∙ Ringed Knight Armor(14.99)[4 kg]", list[12]);
             Assert.assertEquals("", list[13]);
             Assert.assertEquals("Sac 1 après transfert :", list[14]);
