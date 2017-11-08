@@ -367,11 +367,11 @@ public class CharacterTest {
 
             m.invoke(o, o2);
 
-            Assert.assertEquals((boolean)(m1.invoke(o, o2)), true);
+            Assert.assertEquals((boolean) (m1.invoke(o, o2)), true);
 
             Object o3 = constructor2.newInstance();
 
-            Assert.assertEquals((boolean)(m1.invoke(o, o3)), false);
+            Assert.assertEquals((boolean) (m1.invoke(o, o3)), false);
         } catch (ClassNotFoundException e) {
             Assert.fail("should have a class called Bag in lsg.bags package");
         } catch (NoSuchMethodException e) {
@@ -398,7 +398,7 @@ public class CharacterTest {
             Assert.assertEquals(m1.getModifiers(), Modifier.PUBLIC);
             Assert.assertTrue("wrong return type (String) of toString", m1.getReturnType() == String.class);
 
-            Assert.assertEquals((String)(m1.invoke(o)), "Bag [ 0 items | 0/10 kg ]\n" +
+            Assert.assertEquals((String) (m1.invoke(o)), "Bag [ 0 items | 0/10 kg ]\n" +
                     "∙ (empty)");
 
             Class<?> c2 = Class.forName("lsg.weapons.ShotGun");
@@ -419,7 +419,7 @@ public class CharacterTest {
 
             m.invoke(o, o4);
 
-            String[] list = ((String)(m1.invoke(o))).split("\n");
+            String[] list = ((String) (m1.invoke(o))).split("\n");
             String[] list2 = Arrays.copyOfRange(list, 1, 5);
 
             Assert.assertEquals(list[0], "Bag [ 3 items | 9/10 kg ]");
@@ -569,8 +569,8 @@ public class CharacterTest {
             Method m3 = c.getDeclaredMethod("getCapacity");
             Method m4 = c.getDeclaredMethod("getWeight");
 
-            Assert.assertTrue((int)(m3.invoke(b1)) >= (int)(m4.invoke(b1)));
-            Assert.assertTrue((int)(m3.invoke(b2)) >= (int)(m4.invoke(b2)));
+            Assert.assertTrue((int) (m3.invoke(b1)) >= (int) (m4.invoke(b1)));
+            Assert.assertTrue((int) (m3.invoke(b2)) >= (int) (m4.invoke(b2)));
 
         } catch (ClassNotFoundException e) {
             Assert.fail("should have a class called lsg.bags.Bag");
@@ -789,6 +789,54 @@ public class CharacterTest {
             Assert.assertTrue(false);
         } catch (InvocationTargetException e) {
             Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void existGetBagCapacity() {
+        try {
+            Class<?> c = Class.forName("lsg.characters.Character");
+            Method m = c.getDeclaredMethod("getBagCapacity");
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m.getReturnType(), int.class);
+
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Character");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named getBagCapacity in Character class");
+        }
+    }
+
+    @Test
+    public void existGetBagWeight() {
+        try {
+            Class<?> c = Class.forName("lsg.characters.Character");
+            Method m = c.getDeclaredMethod("getBagWeight");
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m.getReturnType(), int.class);
+
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Character");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named getBagWeight in Character class");
+        }
+    }
+
+    @Test
+    public void existGetBagItems() {
+        try {
+            Class<?> c = Class.forName("lsg.characters.Character");
+            Method m = c.getDeclaredMethod("getBagItems");
+            Class<?> c3 = Class.forName("[Llsg.bags.Collectible;");
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC);
+            Assert.assertTrue("wrong return type (Collectible[]) of getBagItems", m.getReturnType() == c3);
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Character");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named getBagWeight in Character class");
         }
     }
 }
