@@ -13,6 +13,7 @@ import java.io.PrintStream;
 import java.lang.reflect.*;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Objects;
 
 public class CharacterTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -905,6 +906,77 @@ public class CharacterTest {
             Assert.fail("should have an interface called Collectible");
         } catch (NoSuchMethodException e) {
             Assert.fail("should have an method named SetBag in Character class");
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void testEquip() {
+        try {
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c = Class.forName("lsg.characters.Hero");
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Class<?> cw = Class.forName("lsg.weapons.Weapon");
+            Class<?> cc = Class.forName("lsg.consumables.Consumable");
+            Method m1 = c1.getDeclaredMethod("equip", cw);
+            Method m2 = c1.getDeclaredMethod("equip", cc);
+            Method m3 = c1.getDeclaredMethod("pickUp", i);
+
+            Assert.assertEquals(m1.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m1.getReturnType(), void.class);
+            Assert.assertEquals(m2.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m2.getReturnType(), void.class);
+
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Class<?> c2 = Class.forName("lsg.armor.DragonSlayerLeggings");
+            Constructor<?> constructor2 = c2.getDeclaredConstructor();
+            Object o2 = constructor2.newInstance();
+
+            m3.invoke(o, o2);
+
+            Class<?> c3 = Class.forName("lsg.weapons.ShotGun");
+            Constructor<?> constructor3 = c3.getDeclaredConstructor();
+            Object o3 = constructor3.newInstance();
+
+            m3.invoke(o, o3);
+
+            Class<?> c4 = Class.forName("lsg.consumables.food.Hamburger");
+            Constructor<?> constructor4 = c4.getDeclaredConstructor();
+            Object o4 = constructor4.newInstance();
+
+            m3.invoke(o, o4);
+
+            System.out.println();
+
+            m1.invoke(o, o3);
+
+            Method m4 = c1.getDeclaredMethod("getWeapon");
+            Object o5 = m4.invoke(o);
+
+            Assert.assertEquals(o5, o3);
+
+            m2.invoke(o, o4);
+
+            Method m5 = c1.getDeclaredMethod("getConsumable");
+            Object o6 = m5.invoke(o);
+
+            Assert.assertEquals(o6, o4);
+
+            String[] list = outContent.toString().split("\n");
+
+            Assert.assertEquals(list[1], "Gregooninator pulls out ShotGun (min:6 max:20 stam:5 dur:100) and equips it !");
+            Assert.assertEquals(list[2], "Gregooninator pulls out Uncle Greg's spicy Maroilles burger [40 life point(s)] and equips it !");
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Collectible");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named equip in Character class");
         } catch (InstantiationException e) {
             Assert.assertTrue(false);
         } catch (IllegalAccessException e) {
