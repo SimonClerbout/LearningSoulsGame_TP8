@@ -680,16 +680,51 @@ public class CharacterTest {
             Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC);
             Assert.assertEquals(m.getReturnType(), void.class);
 
-            Class<?> c2 = Class.forName("lsg.weapons.ShotGun");
+            Class<?> c2 = Class.forName("lsg.armor.DragonSlayerLeggings");
             Constructor<?> constructor2 = c2.getDeclaredConstructor();
             Object o2 = constructor2.newInstance();
 
             m.invoke(o, o2);
-            Assert.assertEquals(outContent.toString(), "Gregooninator picks up ShotGun (min:6 max:20 stam:5 dur:100)");
+            Assert.assertEquals(outContent.toString(), "Gregooninator picks up Dragon Slayer Leggings(10.2)");
         } catch (ClassNotFoundException e) {
             Assert.fail("should have an interface called Collectible");
         } catch (NoSuchMethodException e) {
             Assert.fail("should have an method named pickUp in Character class");
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
+
+    @Test
+    public void testPullOut() {
+        try {
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c = Class.forName("lsg.characters.Hero");
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Method m = c1.getDeclaredMethod("pullOut", i);
+            Method m2 = c1.getDeclaredMethod("pickUp", i);
+
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Assert.assertEquals(m.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m.getReturnType(), i);
+
+            Class<?> c2 = Class.forName("lsg.consumables.food.Hamburger");
+            Constructor<?> constructor2 = c2.getDeclaredConstructor();
+            Object o2 = constructor2.newInstance();
+
+            m2.invoke(o, o2);
+            m.invoke(o, o2);
+            Assert.assertEquals(outContent.toString(), "Gregooninator picks up Uncle Greg's spicy Maroilles burger [40 life point(s)]Gregooninator pulls out Uncle Greg's spicy Maroilles burger [40 life point(s)]");
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Collectible");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named pullOut or pickUp in Character class");
         } catch (InstantiationException e) {
             Assert.assertTrue(false);
         } catch (IllegalAccessException e) {
