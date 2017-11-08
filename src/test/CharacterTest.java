@@ -985,4 +985,70 @@ public class CharacterTest {
             Assert.assertTrue(false);
         }
     }
+
+    @Test
+    public void testEquipInHero() {
+        try {
+            Class<?> i = Class.forName("lsg.bags.Collectible");
+            Class<?> c = Class.forName("lsg.characters.Hero");
+            Class<?> c1 = Class.forName("lsg.characters.Character");
+            Class<?> ca = Class.forName("lsg.armor.ArmorItem");
+            Class<?> cr = Class.forName("lsg.buffs.rings.Ring");
+            Method m1 = c.getDeclaredMethod("equip", ca, int.class);
+            Method m2 = c.getDeclaredMethod("equip", cr, int.class);
+            Method m3 = c1.getDeclaredMethod("pickUp", i);
+
+            Assert.assertEquals(m1.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m1.getReturnType(), void.class);
+            Assert.assertEquals(m2.getModifiers(), Modifier.PUBLIC);
+            Assert.assertEquals(m2.getReturnType(), void.class);
+
+            Constructor<?> constructor = c.getDeclaredConstructor();
+            Object o = constructor.newInstance();
+
+            Class<?> c2 = Class.forName("lsg.armor.DragonSlayerLeggings");
+            Constructor<?> constructor2 = c2.getDeclaredConstructor();
+            Object o2 = constructor2.newInstance();
+
+            m3.invoke(o, o2);
+            System.out.println();
+
+            Class<?> c3 = Class.forName("lsg.armor.BlackWitchVeil");
+            Constructor<?> constructor3 = c3.getDeclaredConstructor();
+            Object o3 = constructor3.newInstance();
+
+            m3.invoke(o, o3);
+            System.out.println();
+
+            Class<?> c4 = Class.forName("lsg.buffs.rings.RingOfDeath");
+            Constructor<?> constructor4 = c4.getDeclaredConstructor();
+            Object o4 = constructor4.newInstance();
+
+            m3.invoke(o, o4);
+            System.out.println();
+
+            m1.invoke(o, o2, 1);
+            m1.invoke(o, o3, 2);
+            m2.invoke(o, o4, 1);
+
+            String[] list = outContent.toString().split("\n");
+
+            Assert.assertEquals(list[0], "Gregooninator picks up Dragon Slayer Leggings(10.2)");
+            Assert.assertEquals(list[1], "Gregooninator picks up Black Witch Veil(4.6)");
+            Assert.assertEquals(list[2], "Gregooninator picks up [Ring of Death, 0.00]");
+            Assert.assertEquals(list[3], "Gregooninator pulls out Dragon Slayer Leggings(10.2) and equips it !");
+            Assert.assertEquals(list[4], "Gregooninator pulls out Black Witch Veil(4.6) and equips it !");
+            Assert.assertEquals(list[5], "Gregooninator pulls out [Ring of Death, 0.00] and equips it !");
+        } catch (ClassNotFoundException e) {
+            Assert.fail("should have an interface called Collectible");
+        } catch (NoSuchMethodException e) {
+            Assert.fail("should have an method named equip in Hero class");
+        } catch (IllegalAccessException e) {
+            Assert.assertTrue(false);
+        } catch (InstantiationException e) {
+            Assert.assertTrue(false);
+        } catch (InvocationTargetException e) {
+            Assert.assertTrue(false);
+        }
+    }
 }

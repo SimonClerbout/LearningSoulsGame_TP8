@@ -21,8 +21,8 @@
       <file leaf-file-name="CharacterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/CharacterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="969" column="38" lean-forward="false" selection-start-line="969" selection-start-column="38" selection-end-line="969" selection-end-column="38" />
+            <state relative-caret-position="581">
+              <caret line="1040" column="106" lean-forward="false" selection-start-line="1040" selection-start-column="106" selection-end-line="1040" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,11 +30,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lsg/characters/Hero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lsg/characters/Character.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="119" column="30" lean-forward="true" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+            <state relative-caret-position="330">
+              <caret line="63" column="38" lean-forward="false" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,7 +160,6 @@
         <option value="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV1.java" />
         <option value="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV3.java" />
         <option value="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV2.java" />
-        <option value="$PROJECT_DIR$/src/lsg/characters/Hero.java" />
         <option value="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV4.java" />
         <option value="$PROJECT_DIR$/src/test/ConsumableTest.java" />
         <option value="$PROJECT_DIR$/src/lsg/LearningSoulsGame.java" />
@@ -163,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/lsg/bags/SmallBag.java" />
         <option value="$PROJECT_DIR$/src/lsg/bags/Bag.java" />
         <option value="$PROJECT_DIR$/src/lsg/characters/Character.java" />
+        <option value="$PROJECT_DIR$/src/lsg/characters/Hero.java" />
         <option value="$PROJECT_DIR$/src/test/CharacterTest.java" />
       </list>
     </option>
@@ -989,48 +999,48 @@
       <workItem from="1508395813665" duration="6379000" />
       <workItem from="1510043717768" duration="5661000" />
       <workItem from="1510067612717" duration="599000" />
-      <workItem from="1510125247588" duration="12009000" />
+      <workItem from="1510125247588" duration="15508000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests - 2017.11.08 at 11h 29m 01s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 41m 36s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 30m 17s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 43m 18s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 31m 36s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 45m 10s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 32m 12s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 45m 47s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 32m 23s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 46m 22s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 34m 28s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 46m 38s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 35m 15s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 46m 50s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 35m 54s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 47m 11s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 36m 29s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 47m 36s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.11.08 at 11h 36m 47s.xml">
+    <history-entry file="tests - 2017.11.08 at 14h 47m 49s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101224000" />
+    <option name="totallyTimeSpent" value="104723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1922" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1042,9 +1052,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24866024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24866024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24758843" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24758843" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21884984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1312,13 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsg/characters/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lsg/consumables/repair/RepairKit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1473,18 +1476,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lsg/characters/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="119" column="30" lean-forward="true" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+        <state relative-caret-position="330">
+          <caret line="63" column="38" lean-forward="false" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lsg/characters/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/CharacterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="969" column="38" lean-forward="false" selection-start-line="969" selection-start-column="38" selection-end-line="969" selection-end-column="38" />
+        <state relative-caret-position="581">
+          <caret line="1040" column="106" lean-forward="false" selection-start-line="1040" selection-start-column="106" selection-end-line="1040" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
