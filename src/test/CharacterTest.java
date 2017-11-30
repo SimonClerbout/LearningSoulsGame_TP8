@@ -425,6 +425,7 @@ public class CharacterTest {
             String[] list2 = Arrays.copyOfRange(list, 1, 5);
 
             Assert.assertEquals(list[0], "Bag [ 3 items | 9/10 kg ]");
+
             Assert.assertTrue(Arrays.asList(list2).contains("∙ ShotGun (min:6 max:20 stam:5 dur:100)[2 kg]"));
             Assert.assertTrue(Arrays.asList(list2).contains("∙ Dragon Slayer Leggings(10.2)[3 kg]"));
             Assert.assertTrue(Arrays.asList(list2).contains("∙ Ringed Knight Armor(14.99)[4 kg]"));
