@@ -45,7 +45,7 @@ public class TitlePane extends VBox{
         ParallelTransition pt = new ParallelTransition(tt, st);
         pt.setNode(titleLabel);
         pt.setCycleCount(1); // nombre de répétitions de l'effet.
-        pt.setOnFinished(event -> {finishedHandler.handle(event);});
+        pt.setOnFinished((event) -> {finishedHandler.handle(event);});
         pt.play();
 
     }
@@ -62,6 +62,7 @@ public class TitlePane extends VBox{
         ParallelTransition pt = new ParallelTransition(tt, st);
         pt.setNode(titleLabel);
         pt.setCycleCount(1); // nombre de répétitions de l'effet.
+        pt.setOnFinished((event) -> {finishedHandler.handle(event);});
         pt.play();
 
     }

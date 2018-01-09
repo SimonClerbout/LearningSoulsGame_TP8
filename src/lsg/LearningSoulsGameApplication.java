@@ -6,12 +6,20 @@ import javafx.event.EventHandler;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import lsg.characters.Hero;
+import lsg.characters.Zombie;
 import lsg.graphics.CSSFactory;
 import lsg.graphics.ImageFactory;
 import lsg.graphics.panes.AnimationPane;
 import lsg.graphics.panes.CreationPane;
+import lsg.graphics.panes.HUDPane;
 import lsg.graphics.panes.TitlePane;
+import lsg.graphics.widgets.characters.renderers.HeroRenderer;
+import lsg.graphics.widgets.characters.renderers.ZombieRenderer;
 import lsg.graphics.widgets.texts.GameLabel;
+import lsg.weapons.Hand;
+import lsg.weapons.ShotGun;
+import lsg.weapons.Sword;
 
 
 /**
@@ -25,6 +33,29 @@ public class LearningSoulsGameApplication extends Application {
     private CreationPane creationPane;
     private String heroName;
     private AnimationPane animationPane;
+    private Hero hero;
+    private HeroRenderer heroRenderer;
+    private Zombie zombie;
+    private ZombieRenderer zombieRenderer;
+    private HUDPane hudPane;
+
+    public void createHero(){
+
+        hero = new Hero();
+        hero.setWeapon(new Sword());
+        heroRenderer = animationPane.createHeroRenderer();
+        heroRenderer.goTo(animationPane.getPrefWidth()*0.5 - heroRenderer.getFitWidth()*0.65, null);
+
+    }
+
+    public void createMonster(EventHandler<ActionEvent> finishedHandler){
+
+        zombie = new Zombie();
+        zombie.setWeapon(new Hand());
+        zombieRenderer = animationPane.createZombieRenderer();
+        zombieRenderer.goTo(animationPane.getPrefWidth()*0.5 - zombieRenderer.getBoundsInLocal().getWidth() * 0.15, finishedHandler);
+
+    }
 
     private void BuildUI(){
 
@@ -44,13 +75,20 @@ public class LearningSoulsGameApplication extends Application {
         root.setBottomAnchor(creationPane, 0.0);
 
         animationPane = new AnimationPane(root);
+        hudPane = new HUDPane();
+        root.setLeftAnchor(hudPane,0.0);
+        root.setRightAnchor(hudPane, 0.0);
+        root.setTopAnchor(hudPane, 0.0);
+        root.setBottomAnchor(hudPane, 0.0);
 
     }
 
     private void play(){
 
         root.getChildren().addAll(animationPane);
-        animationPane.startDemo();
+        root.getChildren().addAll(hudPane);
+        createHero();
+        createMonster((event) -> {hudPane.getMessagePane().showMessage("FIGHT !");});
 
     }
 
@@ -60,11 +98,14 @@ public class LearningSoulsGameApplication extends Application {
 
             heroName = creationPane.getNameField().getText();
             System.out.println("Nom du héro : " + heroName);
-            if(heroName != " "){
+            if(!heroName.equals("")){
 
                 root.getChildren().removeAll(creationPane);
-                gameTitle.zoomOut(null);
-                play();
+                gameTitle.zoomOut((event1 -> {
+
+                    play();
+
+                }));
 
             }
 
@@ -74,9 +115,9 @@ public class LearningSoulsGameApplication extends Application {
 
     public void startGame(){
 
-        gameTitle.zoomIn(event -> {
+        gameTitle.zoomIn((event) -> {
 
-            creationPane.fadeIn(event1 -> {
+            creationPane.fadeIn((event1) -> {
                 ImageFactory.preloadAll(() -> {
                     System.out.println("Pré-chargement des images terminé");
                 });
