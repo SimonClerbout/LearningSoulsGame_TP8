@@ -1,8 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91fa4085-dc7f-4436-bd90-1e1b7b1189b5" name="Default" comment="TP6">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+    <list default="true" id="91fa4085-dc7f-4436-bd90-1e1b7b1189b5" name="Default" comment="TP7">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/fonts/Arkham_reg.TTF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/BACKGROUND.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Blizzard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Diving assault.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Drain mana.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Magic Reflection.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Power of blessing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Scatter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Snare.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Thunder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Wall of Fire.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/Hero Skill Free/Wind Haste.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (1).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (10).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (2).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (3).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (4).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (5).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (6).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (7).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (8).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/potions (9).jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/Collectible/slot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_body_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_head_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_knight_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_left arm_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_left lag_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_right arm_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_right lag_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_shield_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_sword_.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_ATTACK/_ATTACK_000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_ATTACK/_ATTACK_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_ATTACK/_ATTACK_002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_ATTACK/_ATTACK_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_ATTACK/_ATTACK_004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_ATTACK/_ATTACK_005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_ATTACK/_ATTACK_006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_DIE/_DIE_000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_DIE/_DIE_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_DIE/_DIE_002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_DIE/_DIE_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_DIE/_DIE_004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_DIE/_DIE_005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_DIE/_DIE_006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_HURT/_HURT_000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_HURT/_HURT_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_HURT/_HURT_002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_HURT/_HURT_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_HURT/_HURT_004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_HURT/_HURT_005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_HURT/_HURT_006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_IDLE/_IDLE_000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_IDLE/_IDLE_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_IDLE/_IDLE_002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_IDLE/_IDLE_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_IDLE/_IDLE_004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_IDLE/_IDLE_005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_IDLE/_IDLE_006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_JUMP/_JUMP_000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_JUMP/_JUMP_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_JUMP/_JUMP_002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_JUMP/_JUMP_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_JUMP/_JUMP_004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_JUMP/_JUMP_005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_JUMP/_JUMP_006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_RUN/_RUN_000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_RUN/_RUN_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_RUN/_RUN_002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_RUN/_RUN_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_RUN/_RUN_004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_RUN/_RUN_005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_RUN/_RUN_006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_WALK/_WALK_000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_WALK/_WALK_001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_WALK/_WALK_002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_WALK/_WALK_003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_WALK/_WALK_004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_WALK/_WALK_005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/_WALK/_WALK_006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/active9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/passive1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/passive2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/passive3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/passive4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Skills/passive5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_ATTACK/Attack1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_ATTACK/Attack2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_ATTACK/Attack3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_ATTACK/Attack4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_ATTACK/Attack5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_ATTACK/Attack6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_DIE/Dead8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_HURT/Hurt1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_HURT/Hurt2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_HURT/Hurt3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_HURT/Hurt4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_HURT/Hurt5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_IDLE/Idle1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_IDLE/Idle2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_IDLE/Idle3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_IDLE/Idle4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_JUMP/Jump1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_JUMP/Jump2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_JUMP/Jump3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_JUMP/Jump4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_JUMP/Jump5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_JUMP/Jump6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_JUMP/Jump7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_RUN/Run10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_WALK/Walk1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_WALK/Walk2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_WALK/Walk3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_WALK/Walk4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_WALK/Walk5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/_WALK/Walk6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/body.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/body_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/hand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/head.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/head2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/head3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/head4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/head5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/head6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/left_arm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/left_feet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/left_hand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/left_leg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/left_leg_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/left_sholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/neck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/right_art.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/right_feet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/right_leg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/right_leg_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/right_sholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/saliva1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/saliva2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/saliva3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/Zombie1/bodyparts/saliva4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_TXT/The Wild Breath of Zelda.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/LearningSoulsGame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/LearningSoulsGameApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/ArmorItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/BlackWitchVeil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/DragonSlayerLeggings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/RingedKnightArmor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/Bag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/Collectible.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/MediumBag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/SmallBag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/BuffItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/DragonSlayerRing.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/Ring.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/RingOfDeath.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/RingOfSwords.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/talismans/MoonStone.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/talismans/NoonGift.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/talismans/Talisman.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Character.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Hero.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Lycanthrope.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Monster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/Consumable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Coffee.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Drink.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Whisky.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Wine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/food/Americain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/food/Food.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/food/Hamburger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/repair/RepairKit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/ConsumeEmptyException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/ConsumeException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/ConsumeNullException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/ConsumeRepairNullWeaponException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/NoBagException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/StaminaEmptyException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/WeaponBrokenException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/exceptions/WeaponNullException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/CSSFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/ImageFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/css/LSG.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/css/LSGFont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_PNG/3_KNIGHT/3_KNIGHT.scml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_TXT/Information.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_TXT/LICENSES.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/images/craftpix/_TXT/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/panes/AnimationPane.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/panes/CreationPane.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/panes/TitlePane.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/widgets/characters/renderers/CharacterRenderer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/widgets/characters/renderers/HeroRenderer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/widgets/characters/renderers/ZombieRenderer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/graphics/widgets/texts/GameLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/helpers/Dice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/Claw.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/ShotGun.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/Sword.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/Weapon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,7 +265,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LearningSoulsGameApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LearningSoulsGameApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lsg/LearningSoulsGameApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
@@ -27,6 +273,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -203,6 +459,7 @@
         <option value="$PROJECT_DIR$/src/lsg/graphics/panes/CreationPane.java" />
         <option value="$PROJECT_DIR$/src/lsg/graphics/panes/TitlePane.java" />
         <option value="$PROJECT_DIR$/src/lsg/LearningSoulsGameApplication.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1206,7 +1463,7 @@
       <workItem from="1515399657090" duration="436000" />
       <workItem from="1515400381098" duration="52000" />
       <workItem from="1515400435427" duration="8397000" />
-      <workItem from="1515499311083" duration="7059000" />
+      <workItem from="1515499311083" duration="7144000" />
     </task>
     <task id="LOCAL-00001" summary="TP5 fin">
       <created>1512054266064</created>
@@ -1222,7 +1479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515399212999</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TP7">
+      <created>1515506933204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515506933204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1258,23 +1522,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166029000" />
+    <option name="totallyTimeSpent" value="166114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="965" height="1031" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3226152" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3226152" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2540193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24758843" sideWeight="0.4978701" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1305,7 +1568,8 @@
     <MESSAGE value="TP2: q7.2" />
     <MESSAGE value="TP5 fin" />
     <MESSAGE value="TP6" />
-    <option name="LAST_COMMIT_MESSAGE" value="TP6" />
+    <MESSAGE value="TP7" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1321,13 +1585,6 @@
     <entry file="file://$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV2.java" />
     <entry file="file://$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV3.java" />
     <entry file="file://$PROJECT_DIR$/src/lsg/consumables/repair/RepairKit.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/ConsumableTest.java" />
     <entry file="file://$PROJECT_DIR$/src/lsg/armor/BlackWitchVeil.java" />
     <entry file="file://$PROJECT_DIR$/src/lsg/consumables/food/Hamburger.java" />
@@ -1527,6 +1784,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
